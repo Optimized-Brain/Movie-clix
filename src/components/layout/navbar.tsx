@@ -16,7 +16,6 @@ export function Navbar() {
             <Link href="/" className="text-foreground hover:text-accent transition-colors text-lg font-medium">
               Home
             </Link>
-            {/* Future links: TV Shows, Movies, My List */}
           </div>
         </div>
       </div>
