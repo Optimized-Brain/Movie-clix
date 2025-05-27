@@ -21,7 +21,6 @@ export default function ContentDetailsPage({ params }: ContentDetailsPageProps) 
 
   return (
     <div className="min-h-screen">
-      {/* Backdrop Section */}
       <div className="relative h-[50vh] md:h-[65vh] w-full">
         <Image
           src={item.backdropUrl}
@@ -44,10 +43,8 @@ export default function ContentDetailsPage({ params }: ContentDetailsPageProps) 
         </div>
       </div>
 
-      {/* Content Details Section */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Left Column: Poster & Play Button */}
           <div className="md:col-span-1">
             <div className="sticky top-24"> {/* Sticky poster */}
               <div className="relative aspect-[2/3] w-full max-w-xs mx-auto md:mx-0 rounded-lg overflow-hidden shadow-2xl mb-6">
@@ -68,9 +65,7 @@ export default function ContentDetailsPage({ params }: ContentDetailsPageProps) 
             </div>
           </div>
 
-          {/* Right Column: Info, Cast, Seasons */}
           <div className="md:col-span-2">
-            {/* Genres */}
             <div className="mb-6">
               {item.genres.map((genre) => (
                 <Badge key={genre} variant="secondary" className="mr-2 mb-2 text-sm px-3 py-1 bg-secondary text-secondary-foreground">
@@ -79,10 +74,8 @@ export default function ContentDetailsPage({ params }: ContentDetailsPageProps) 
               ))}
             </div>
 
-            {/* Description */}
             <p className="text-base md:text-lg text-foreground/90 mb-8 leading-relaxed">{item.description}</p>
 
-            {/* Cast */}
             {item.cast && item.cast.length > 0 && (
               <div className="mb-8">
                 <h3 className="text-2xl font-semibold text-primary-foreground mb-4">Cast</h3>
@@ -94,7 +87,6 @@ export default function ContentDetailsPage({ params }: ContentDetailsPageProps) 
               </div>
             )}
 
-            {/* Seasons (for TV shows) */}
             {item.type === 'tv' && item.seasons && item.seasons.length > 0 && (
               <SeasonSwitcher seasons={item.seasons} contentTitle={item.title} />
             )}
