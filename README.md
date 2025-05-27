@@ -9,7 +9,6 @@ StreamVerse is a modern, AI-powered movie and TV show discovery platform built w
 - **Content Discovery**: Browse trending, recently added, and genre-specific movies and TV shows.
 - **Detailed Content Pages**: View comprehensive information about each title, including synopsis, cast, release year, rating, duration, and seasons/episodes for TV shows.
 - **Video Playback**: Integrated trailer playback.
-- **AI-Powered Recommendations**: Utilizes Genkit to provide personalized content suggestions based on viewing history.
 - **Responsive Design**: Optimized for various screen sizes, from mobile to desktop.
 - **Loading Skeletons**: Smooth user experience with skeleton loaders while content is being fetched.
 
@@ -37,28 +36,12 @@ Follow these instructions to get a local copy up and running for development and
     # yarn install
     ```
 
-3.  **Environment Variables:**
-    Create a `.env` file in the root of your project. You may need to add API keys or other configuration variables here, especially for Genkit and any external services.
-    Example `.env` file:
-    ```
-    GOOGLE_API_KEY=your_google_api_key_here
-    ```
-    *(Note: `GOOGLE_API_KEY` is an example; refer to Genkit documentation for specific environment variables required for your AI models.)*
 
 4.  **Run the development server for the Next.js app:**
     ```bash
     npm run dev
     ```
     This will start the Next.js application, typically on `http://localhost:9002`.
-
-5.  **Run the Genkit development server (in a separate terminal):**
-    Genkit flows (AI logic) are often run with a separate development server.
-    ```bash
-    npm run genkit:dev
-    # or for auto-reloading on changes
-    # npm run genkit:watch
-    ```
-    This starts the Genkit development environment, allowing you to test and debug your AI flows.
 
 ## 🛠️ Key Technologies Used
 
@@ -69,40 +52,7 @@ Follow these instructions to get a local copy up and running for development and
 -   **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
 -   **Genkit (Firebase)**: Toolkit for building AI-powered features, integrated with Google AI models (e.g., Gemini).
 -   **Lucide React**: Library for beautiful and consistent icons.
--   **Zod**: TypeScript-first schema declaration and validation library, used with Genkit.
-
-## 📁 Project Structure
-
-Here's a brief overview of the key directories:
-
-```
-.
-├── public/             # Static assets
-├── src/
-│   ├── ai/             # Genkit AI flows and configuration
-│   │   ├── flows/      # Specific AI flow implementations (e.g., recommend-content.ts)
-│   │   ├── dev.ts      # Genkit development server entry point
-│   │   └── genkit.ts   # Genkit global initialization
-│   ├── app/            # Next.js App Router (pages, layouts, API routes)
-│   │   ├── (routes)/   # Route groups and page files (e.g., watch/[id]/page.tsx)
-│   │   ├── globals.css # Global styles and ShadCN theme variables
-│   │   ├── layout.tsx  # Root layout
-│   │   └── page.tsx    # Homepage
-│   ├── components/     # React components
-│   │   ├── layout/     # Layout components (e.g., Navbar)
-│   │   ├── streamverse/# App-specific components (e.g., ContentCard, HeroVideo)
-│   │   └── ui/         # ShadCN UI components
-│   ├── hooks/          # Custom React hooks (e.g., useToast, useMobile)
-│   ├── lib/            # Utility functions, data sources, etc.
-│   │   ├── data.ts     # Mock data and data fetching functions
-│   │   └── utils.ts    # General utility functions (e.g., cn for Tailwind)
-├── .env                # Environment variables (create this file)
-├── components.json     # ShadCN UI configuration
-├── next.config.ts      # Next.js configuration
-├── package.json        # Project dependencies and scripts
-├── tailwind.config.ts  # Tailwind CSS configuration
-└── tsconfig.json       # TypeScript configuration
-```
+-   **Zod**: TypeScript-first schema declaration and validation library, used with Genki
 
 ## 📜 Available Scripts
 
@@ -138,18 +88,4 @@ Contributions are welcome! If you have suggestions or want to improve the app, f
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
-## 📚 Further Help & Resources
-
--   [Next.js Documentation](https://nextjs.org/docs)
--   [React Documentation](https://react.dev/)
--   [ShadCN UI](https://ui.shadcn.com/)
--   [Tailwind CSS](https://tailwindcss.com/docs)
--   [Genkit Documentation](https://firebase.google.com/docs/genkit)
--   [Firebase App Hosting](https://firebase.google.com/docs/app-hosting)
--   [Lucide Icons](https://lucide.dev/)
-
----
-
-Happy Coding!
 
