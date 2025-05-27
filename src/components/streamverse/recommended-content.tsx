@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { recommendContent, type RecommendContentOutput } from '@/ai/flows/recommend-content';
 import { ContentCard } from './content-card';
-import { getContentById, type ContentItem } from '@/lib/data'; // To fetch full content item details
+import { getContentById, type ContentItem } from '@/lib/data';
 import { Loader2 } from 'lucide-react';
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
@@ -23,10 +23,8 @@ export function RecommendedContent() {
         const result: RecommendContentOutput = await recommendContent({ viewingHistory });
         
         if (result.recommendations && result.recommendations.length > 0) {
-          // For demo, we'll try to find these titles in our mock data.
-          // In a real app, recommendations might be IDs or more detailed objects.
           const detailedRecommendations = result.recommendations
-            .map(title => getContentById(mockGetIdByTitle(title))) // Need a way to map title to ID
+            .map(title => getContentById(mockGetIdByTitle(title)))
             .filter(item => item !== undefined) as ContentItem[];
           setRecommendations(detailedRecommendations);
         } else {
