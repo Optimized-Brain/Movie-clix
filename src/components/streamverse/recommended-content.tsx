@@ -18,15 +18,12 @@ export function RecommendedContent() {
       setIsLoading(true);
       setError(null);
       try {
-        // Mock viewing history
         const viewingHistory = ['Stellar Odyssey', 'The Crimson Cipher']; 
         const result: RecommendContentOutput = await recommendContent({ viewingHistory });
         
         if (result.recommendations && result.recommendations.length > 0) {
-          // For demo, we'll try to find these titles in our mock data.
-          // In a real app, recommendations might be IDs or more detailed objects.
           const detailedRecommendations = result.recommendations
-            .map(title => getContentById(mockGetIdByTitle(title))) // Need a way to map title to ID
+            .map(title => getContentById(mockGetIdByTitle(title)))
             .filter(item => item !== undefined) as ContentItem[];
           setRecommendations(detailedRecommendations);
         } else {
