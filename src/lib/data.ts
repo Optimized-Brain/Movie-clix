@@ -17,8 +17,7 @@ export interface Episode {
 export interface Season {
   id: string;
   seasonNumber: number;
-  episodes: Episode[];
-  // trailerUrl?: string; 
+  episodes: Episode[]; 
 }
 
 export interface ContentItem {
