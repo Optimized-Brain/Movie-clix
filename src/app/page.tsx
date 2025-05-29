@@ -11,7 +11,7 @@ export default function HomePage() {
   return (
     <div>
       {featuredItem && <HeroVideo item={featuredItem} />}
-      <div className="container mx-auto px-0 sm:px-0 lg:px-0"> {/* Container for carousels to manage padding if needed, carousels manage their own padding now */}
+      <div className="container mx-auto px-0 sm:px-0 lg:px-0">
         <ContentCarousel title="Trending Now" items={trendingNow} />
         <ContentCarousel title="Recently Added" items={recentlyAdded} />
         {genresList.map((genre) => {
