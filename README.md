@@ -1,5 +1,5 @@
 
-# StreamVerse 🎬
+# MovieCLix 🎬
 
 StreamVerse is a modern, AI-powered movie and TV show discovery platform built with Next.js, React, ShadCN UI, Tailwind CSS, and Genkit. It provides a sleek interface for browsing content, watching trailers, and getting personalized recommendations.
 
