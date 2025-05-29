@@ -32,8 +32,8 @@ Follow these instructions to get a local copy up and running for development and
 2.  **Install dependencies:**
     ```bash
     npm install
-    # or
-    # yarn install
+     # or
+    yarn install
     ```
 
 
@@ -58,34 +58,5 @@ Follow these instructions to get a local copy up and running for development and
 
 In the `package.json`, you will find several scripts:
 
--   `npm run dev`: Starts the Next.js development server with Turbopack (usually on port 9002).
--   `npm run genkit:dev`: Starts the Genkit development server.
--   `npm run genkit:watch`: Starts the Genkit development server with watch mode (reloads on file changes).
--   `npm run build`: Builds the Next.js application for production.
--   `npm run start`: Starts the Next.js production server (after running `build`).
--   `npm run lint`: Lints the codebase using Next.js's built-in ESLint configuration.
--   `npm run typecheck`: Runs TypeScript to check for type errors.
-
-## ☁️ Deployment
-
-This project is configured for deployment on **Firebase App Hosting**. The `apphosting.yaml` file contains the basic configuration for this.
-
-To deploy:
-1. Ensure you have the Firebase CLI installed and configured.
-2. Set up a Firebase project and link it to your local directory.
-3. Deploy using the Firebase CLI:
-   ```bash
-   firebase deploy --only hosting
-   # or specific to App Hosting if configured
-   ```
-   Refer to the [Firebase App Hosting documentation](https://firebase.google.com/docs/app-hosting) for detailed deployment instructions.
-
-## 🤝 Contributing
-
-Contributions are welcome! If you have suggestions or want to improve the app, feel free to:
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+-   `npm run dev`: Starts the Next.js development server.
 
