@@ -25,8 +25,8 @@ Follow these instructions to get a local copy up and running for development and
 
 1.  **Clone the repository (if you haven't already):**
     ```bash
-    git clone <your-repository-url>
-    cd <repository-directory>
+    git clone https://github.com/ProlacterGolacter/Movie-clix.git
+    cd https://github.com/ProlacterGolacter/Movie-clix.git
     ```
 
 2.  **Install dependencies:**
