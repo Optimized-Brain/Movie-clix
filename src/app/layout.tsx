@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'StreamVerse',
+  title: 'MovieClix',
   description: 'Your universe of movies and TV shows.',
 };
 
