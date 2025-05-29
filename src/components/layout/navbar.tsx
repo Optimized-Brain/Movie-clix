@@ -9,7 +9,7 @@ export function Navbar() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center text-primary hover:text-accent transition-colors">
               <Clapperboard className="h-10 w-10 mr-3" />
-              <span className="font-bold text-3xl tracking-tight">StreamVerse</span>
+              <span className="font-bold text-3xl tracking-tight">MovieClix</span>
             </Link>
           </div>
           <div className="flex items-center space-x-6">
