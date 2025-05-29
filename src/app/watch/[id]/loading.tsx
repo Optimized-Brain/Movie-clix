@@ -17,7 +17,6 @@ export default function LoadingContentDetailsPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-[-80px] md:mt-[-120px] relative z-20">
-          {/* Left Column Skeleton */}
           <div className="md:col-span-1">
              <div className="sticky top-24">
                 <Skeleton className="relative aspect-[2/3] w-full max-w-xs mx-auto md:mx-0 rounded-lg shadow-2xl mb-6" />
