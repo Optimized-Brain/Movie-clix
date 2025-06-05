@@ -18,7 +18,7 @@ interface SeasonSwitcherProps {
   seasons: Season[];
   contentTitle: string;
 }
-
+// season switcher component
 export function SeasonSwitcher({ seasons, contentTitle }: SeasonSwitcherProps) {
   const [selectedSeasonId, setSelectedSeasonId] = useState<string | undefined>(seasons[0]?.id);
 
