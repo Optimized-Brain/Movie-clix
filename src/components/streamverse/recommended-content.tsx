@@ -40,7 +40,6 @@ export function RecommendedContent() {
     fetchRecommendations();
   }, []);
 
-  // Helper to map title to ID for demo purposes. In real app, AI might return IDs.
   const mockGetIdByTitle = (title: string): string => {
     if (title.toLowerCase().includes('echoes')) return '3';
     if (title.toLowerCase().includes('guardians')) return '4';
