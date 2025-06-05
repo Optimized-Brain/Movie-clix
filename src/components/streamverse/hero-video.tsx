@@ -7,7 +7,7 @@ import { PlayCircle, Info } from 'lucide-react';
 interface HeroVideoProps {
   item: ContentItem;
 }
-
+// this is where content video streaming content will be hosted
 export function HeroVideo({ item }: HeroVideoProps) {
   return (
     <div className="relative h-[75vh] w-full overflow-hidden">
