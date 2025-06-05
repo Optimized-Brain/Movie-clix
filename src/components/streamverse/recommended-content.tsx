@@ -7,7 +7,7 @@ import { getContentById, type ContentItem } from '@/lib/data'; // To fetch full 
 import { Loader2 } from 'lucide-react';
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
-
+// component which will handle recommended content will be hosted
 export function RecommendedContent() {
   const [recommendations, setRecommendations] = useState<ContentItem[]>([]);
   const [isLoading, setIsLoading] = useState(true);
