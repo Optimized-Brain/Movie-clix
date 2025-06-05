@@ -11,7 +11,7 @@ import Link from 'next/link';
 interface ContentDetailsPageProps {
   params: { id: string };
 }
-
+// main page
 export default function ContentDetailsPage({ params }: ContentDetailsPageProps) {
   const item = getContentById(params.id);
 
