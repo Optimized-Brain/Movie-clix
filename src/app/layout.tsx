@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: 'MovieClix',
   description: 'Your universe of movies and TV shows.',
 };
-
+// RootLayout function for layout
 export default function RootLayout({
   children,
 }: Readonly<{

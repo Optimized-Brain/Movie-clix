@@ -4,7 +4,7 @@ export interface CastMember {
   role: string;
   imageUrl: string; 
 }
-
+// dummy data
 export interface Episode {
   id: string;
   episodeNumber: number;
@@ -37,6 +37,7 @@ export interface ContentItem {
   featured?: boolean;
 }
 
+// mock content including movies
 export const mockContent: ContentItem[] = [
   {
     id: '1',
