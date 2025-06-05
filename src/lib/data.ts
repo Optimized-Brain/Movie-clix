@@ -37,6 +37,7 @@ export interface ContentItem {
   featured?: boolean;
 }
 
+// mock content including movies
 export const mockContent: ContentItem[] = [
   {
     id: '1',
