@@ -6,7 +6,7 @@ interface ContentCarouselProps {
   title: string;
   items: ContentItem[];
 }
-// content crousal component
+
 export function ContentCarousel({ title, items }: ContentCarouselProps) {
   if (!items || items.length === 0) {
     return null;
