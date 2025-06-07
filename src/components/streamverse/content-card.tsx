@@ -8,7 +8,7 @@ interface ContentCardProps {
   item: ContentItem;
 }
 
-// conent card component
+
 export function ContentCard({ item }: ContentCardProps) {
   return (
     <Link href={`/watch/${item.id}`} className="block group">
