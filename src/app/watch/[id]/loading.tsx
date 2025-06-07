@@ -15,7 +15,7 @@ export default function LoadingContentDetailsPage() {
             <Skeleton className="h-5 w-20 rounded-md" />
            </div>
         </div>
-
+//
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-[-80px] md:mt-[-120px] relative z-20">
           <div className="md:col-span-1">
              <div className="sticky top-24">
