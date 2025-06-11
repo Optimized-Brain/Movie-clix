@@ -18,7 +18,7 @@ interface SeasonSwitcherProps {
   seasons: Season[];
   contentTitle: string;
 }
-
+//
 export function SeasonSwitcher({ seasons, contentTitle }: SeasonSwitcherProps) {
   const [selectedSeasonId, setSelectedSeasonId] = useState<string | undefined>(seasons[0]?.id);
 
@@ -50,7 +50,7 @@ export function SeasonSwitcher({ seasons, contentTitle }: SeasonSwitcherProps) {
           </Select>
         )}
       </div>
-
+      
       {selectedSeason && (
         <div className="space-y-4">
           {selectedSeason.episodes.map((episode, index) => (
