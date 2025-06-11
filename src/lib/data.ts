@@ -4,7 +4,7 @@ export interface CastMember {
   role: string;
   imageUrl: string; 
 }
-// dummy data
+
 export interface Episode {
   id: string;
   episodeNumber: number;
