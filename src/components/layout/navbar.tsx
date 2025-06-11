@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Clapperboard } from 'lucide-react';
-
+//
 export function Navbar() {
   return (
     <nav className="bg-background/80 backdrop-blur-md sticky top-0 z-50 shadow-lg">
