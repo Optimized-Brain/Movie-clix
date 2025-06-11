@@ -70,7 +70,7 @@ export function RecommendedContent() {
       </section>
     );
   }
-
+//
   if (recommendations.length === 0) {
     return (
        <section className="py-8 md:py-12 px-4 sm:px-6 lg:px-8">
