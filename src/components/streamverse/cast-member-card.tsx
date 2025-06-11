@@ -5,7 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 interface CastMemberCardProps {
   member: CastMember;
 }
-
+//
 export function CastMemberCard({ member }: CastMemberCardProps) {
   return (
     <Card className="bg-card border-transparent hover:shadow-md transition-shadow">
